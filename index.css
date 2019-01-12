@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  font-family: Verdana;
 }
 
 .body {
@@ -20,9 +21,10 @@ body {
 }
 
 .header {
-  flex: 1;
+  /*flex: 1;*/
+  margin-top: 2em;
   width: 100vw;
-  height: 5em;
+  /*height: 10em;*/
   background-color: var(--main-bg-color);
   display: flex;
   justify-content: center;
@@ -33,27 +35,32 @@ body {
 }
 
 .subpage {
-  /*margin: 1em;*/
-}
-.subpage a {
+  /*flex: 1;*/
+  margin-top: 0.5em;
   font-size: 20pt;
-  text-decoration: none;
-  padding: 1em;
-  border-top: 1px solid var(--border-color);
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  color: black;
+  padding: 0.7em;
+  border-top: 1px dotted var(--border-color);
+  border-left: 1px dotted var(--border-color);
+  border-right: 1px dotted var(--border-color);
   transition: all 0.3s ease;
 }
-
-.subpage a:hover {
+.subpage:hover {
+  cursor: crosshair;
   background-color: var(--border-color);
+}
+.subpage:hover a {
+  cursor: crosshair;
   color: white;
+}
+
+.subpage a {
+  color: black;
+  text-decoration: none;
 }
 
 
 .header-text {
-  margin: 1em 0;
+  /*margin: 1em 0;*/
   font-size: 40pt;
   color: var(--header-color);
   letter-spacing: 10px;
