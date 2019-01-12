@@ -1,0 +1,14 @@
+{
+  "name": "a.r.g",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnano": "^4.1.7",
+    "parcel-bundler": "^1.11.0"
+  },
+  "scripts": {
+    "build": "parcel build index.html && rm -rf dist/materials && cp -r materials dist/materials && cp favicon.ico dist/favicon.ico",
+    "dev": "parcel index.html"
+  }
+}
